@@ -1,0 +1,6 @@
+'data/: RIOT API'
+'data/: GITHUB MAX-Toxic-Comment-Classifier'
+
+
+"""data_path = ("riot_API.csv")
+data = pd.read_csv(data_path) """

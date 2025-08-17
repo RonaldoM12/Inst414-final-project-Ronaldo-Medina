@@ -48,3 +48,40 @@ def histoPlotter(y):
 
     return plt
 
+"""
+another plot
+def histoPlotter(y):
+
+    logger.info('Started')
+
+    plt.figure()
+    plt.hist(y, bins= 20)
+    plt.xlabel("Predicted Toxicity")
+    plt.ylabel("Counter")
+    plt.title("")
+    plt.savefig("")
+    plt.show()
+
+    logger.info('Finished')
+
+    return plt
+"""
+
+"""
+a different plot 
+def histoPlotter(y):
+
+    logger.info('Started')
+
+    plt.figure()
+    plt.hist(y, bins= 20)
+    plt.xlabel("Predicted Toxicity")
+    plt.ylabel("Counter")
+    plt.title("")
+    plt.savefig("")
+    plt.show()
+
+    logger.info('Finished')
+
+    return plt
+"""

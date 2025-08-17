@@ -5,7 +5,11 @@ Online games like Marvel Rivals, Valorant, League of Legends (LoL) and overwatch
 As a safety analyst at a gaming company the role is to minimize toxicity as much as possible before it is taken to a level where it cannot come back down. The client is the head of player experience who wants all of their player base to enjoy the game and be able to bring in new players. The goal for the head of player experience is to be able to identify high risk players who are likely to become toxic and thus intervene or stop their messages before they are able to be released, stopping them with either communication bans or gaming restrictions. 
 Data science can help by building a model that can identify and predict whether a player will exhibit toxic behavior in future matches, based on previous gameplay or gameplay from other games which are similar, we will also use their previous chat logs, and penalty history if they have any. This will allow all companies to moderate their online communities a lot more effectively which will also prevent damage or any further damage to their reputation. 
 
-the data sets I am using are RIOT's API which include using in game chat logs, match level statistics, reports, ban history, and account meta data. And I am also going to use GITHUB MAX-Toxic-Comment-Classifier 
+the data sets I am using are RIOT's API which include using in game chat logs, match level statistics, reports, ban history, and account meta data. And I am also going to use GITHUB MAX-Toxic-Comment-Classifier which has 4 different datasets available 
+the first one being a training dataset
+the second one for testing
+third are potential sample cases
+and the fourth are label testing
 
 The technique I will be employing is a logistic regression
 
@@ -25,4 +29,5 @@ cd/path/to/my/INST-414-Final-project-Ronaldo-Medina
 Code Package Structure: 
 'data/: RIOT API'
 'data/: GITHUB MAX-Toxic-Comment-Classifier'
+
 

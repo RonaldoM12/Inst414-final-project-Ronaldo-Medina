@@ -105,7 +105,7 @@ def evaluation_class(y : Iterable[int], y_guess: Iterable[int], y_probability: O
          print("This message has a keyword which is identified as toxic")
     elif accuracy_collector <= 0.5:
         print("At minimum half of this message is toxic and needs to be reviewed")
-    elif accuracy_collector == 0.75:
+    elif accuracy_collector <= 0.75:
         print("The majority of this message needs to be revised and cannot be sent")
     else:
       print("This message is extremely toxic and WILL NOT be sent, this message is now pending review")

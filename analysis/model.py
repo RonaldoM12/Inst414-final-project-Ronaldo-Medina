@@ -1,20 +1,18 @@
-"""
-in model, we are going to design it with the intention
-of using Logistic Regression in order to compute all of the
-calculations
-
-"""
 import logging
 from typing import Dict, Iterable, Optional
 import numpy as np
-import pandas as pd
 from sklearn.pipeline import Pipeline
 from sklearn.feature_extraction.text import TfidfVectorizer as vector
 from sklearn.preprocessing import StandardScaler
 from sklearn.impute import SimpleImputer
 logger = logging.getLogger(__name__)
 
+"""
+in model, we are going to design it with the intention
+of using Logistic Regression in order to compute all of the
+calculations
 
+"""
 def model(
         col: Optional[str] = "comment_text",
         num_cols: Optional[list[str]] = None,
@@ -52,11 +50,6 @@ In evaluate we are going to use measures such as
 accuracy, and recall in order to get the model used to
 seeing potential scenarios
 """
-
-import logging
-from typing import Dict, Iterable, Optional
-import numpy as np
-import pandas as pd
 from sklearn.metrics import (
     accuracy_score, 
      recall_score,
@@ -66,7 +59,6 @@ from sklearn.metrics import (
      roc_auc_score
      )
 
-logger = logging.getLogger(__name__)
 
 """
 An evaluation class that will look at accuracy, recalling

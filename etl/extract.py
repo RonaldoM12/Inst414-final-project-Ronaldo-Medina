@@ -1,6 +1,5 @@
 
-import os, re, logging
-import numpy as np
+import os, logging
 import pandas as pd
 from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split
@@ -15,11 +14,8 @@ IBM, IBM has 4 seperate data formats I will be using train as it
 is the dataset which contains the toxicity comments
 """
 
-
-
 #save into the data folder
 # Extracts arrest data CSVs into dataframes
-
 
 import os
 import pandas as pd

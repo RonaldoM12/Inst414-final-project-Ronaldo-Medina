@@ -18,7 +18,7 @@ is the dataset which contains the toxicity comments
 
 
 #save into the data folder
-   # Extracts arrest data CSVs into dataframes
+# Extracts arrest data CSVs into dataframes
 
 
 import os

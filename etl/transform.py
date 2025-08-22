@@ -46,6 +46,3 @@ def cleanData(IBM_Path):
     logger.info('Finished')
 
     return lower
-
-
-

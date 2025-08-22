@@ -1,0 +1,13 @@
+
+'data/: GITHUB MAX-Toxic-Comment-Classifier'
+import pandas as pd
+
+def Rdata():
+    data_path = ("C:/Users/titom/Downloads/test_examples.csv") #
+
+    data = pd.read_csv(data_path)
+
+    dataCall = data[["toxic", "severe_toxic", "obscene", "threat","insult", "identity_hate"]]
+
+    return dataCall
+ 

@@ -12,13 +12,11 @@ user has been reported
 than we are going to save this. 
 """
 import logging
-import mylib
 import os, re, logging
 import pandas as pd
 
 "Helpers"
-IBM_path = "data/ibm_toxic.csv"
-RIOT_path = "data/riot_API.csv"
+IBM_path = "data/test_examples.csv"
 url = re.compile(r"(https?://\S+|www\.\S+)")
 mentions = re.compile(r"@\w+")
 hashtag = re.compile(r"#(\w+)")
@@ -30,14 +28,13 @@ logger = logging.getLogger(__name__)
 def loadCsv():
     logger.info('Started')
 
-    RIOT_path = pd.read_csv("riot_API.csv")
-    IBM_path = pd.read_csv("train.csv")
+    path = pd.read_csv("data/test_examples.csv")
 
     logger.info('Finished')
     
     return None
 
-def cleanData(RIOT_path, IBM_Path):
+def cleanData(IBM_Path):
 
     logger.info('Started')
 
@@ -48,7 +45,7 @@ def cleanData(RIOT_path, IBM_Path):
 
     logger.info('Finished')
 
-    return lower.strip()
+    return lower
 
 
 

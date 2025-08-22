@@ -5,7 +5,6 @@ plotly, or Bokeh
 """
 import bokeh
 import logging
-import mylib
 import plotly
 import re
 import pandas as pd
@@ -16,15 +15,17 @@ import matplotlib.pyplot as plt
 
 logger = logging.getLogger(__name__)
 
+data_path = ("C:/Users/titom/Downloads/test_examples.csv")
+df = pd.read_csv(data_path)
+
 def figurePlotter():
 
     logger.info('Started')
 
     plt.figure(figsize=(8, 5))
-    sns.countplot(x="Toxic", data=sample_submission, palette = "coolwarm")
-    plt.title("Countering Toxicity")
+    sns.countplot(x="toxic", hue="toxic" , data= df, palette = "coolwarm")
     plt.xlabel("Toxicity")
-    plt.ylabel("Balancing")
+    plt.ylabel("toxic measured")
     plt.savefig("ToxicityCounter.png")
     plt.show()
 
@@ -32,16 +33,15 @@ def figurePlotter():
 
     return plt
 
-def histoPlotter(y):
+def histoPlotter(y = df):
 
     logger.info('Started')
 
     plt.figure()
-    plt.hist(y, bins= 20)
-    plt.xlabel("Predicted Toxicity")
-    plt.ylabel("Counter")
-    plt.title("")
-    plt.savefig("")
+    plt.hist(y, bins= 10)
+    plt.xlabel("Toxicity")
+    plt.ylabel("Toxic measured")
+    plt.savefig("ToxicIndicator.png")
     plt.show()
 
     logger.info('Finished')
